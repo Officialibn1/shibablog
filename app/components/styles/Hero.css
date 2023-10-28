@@ -1,0 +1,11 @@
+header {
+    @apply w-full flex flex-col gap-5 h-[30vh] items-center;
+}
+
+header h1 {
+    @apply text-3xl text-center;
+}
+
+header p {
+    @apply text-sm font-light text-center;
+}

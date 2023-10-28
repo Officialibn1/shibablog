@@ -1,7 +1,10 @@
 import Image from 'next/image'
+import HeroBanner from './components/Hero'
 
 export default function Home() {
   return (
-    <h1>Shiba Blog</h1>
+      <section>
+        <HeroBanner />
+      </section>
   )
 }

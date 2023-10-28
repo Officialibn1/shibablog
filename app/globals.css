@@ -76,4 +76,27 @@ nav {
   border-radius: .5rem;
 }
 
+/* Footer styles */
+footer {
+  @apply bg-zinc-950 w-full flex flex-col gap-5 py-10 max-w-screen-2xl mx-auto px-[5vw] items-center;
+}
+
+footer p {
+  @apply text-sm font-thin;
+}
+
+footer p span {
+  @apply text-lg;
+}
+
+
+footer .socialIcons {
+  @apply flex gap-5
+}
+
+footer .socialIcons span {
+  @apply text-2xl px-2 py-2 outline-zinc-200;
+  border: 1px solid;
+  border-radius: .5rem;
+}
 
