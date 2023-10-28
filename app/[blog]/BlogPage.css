@@ -42,6 +42,7 @@
 
 .blogPageText p {
     @apply text-lg font-extralight;
+    line-height: 2;
 }
 
 .homeBtn {
