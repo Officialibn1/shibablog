@@ -2,26 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-zinc-900 text-zinc-200;
 }
+
+main {
+  @apply max-w-screen-2xl mx-auto px-[5vw] mt-40;
+}
+
+/* Navbar styles */
+nav {
+  @apply flex justify-between items-center py-5 fixed top-0 left-0 w-full px-[5vw];
+  /* backdrop-filter: blur(10px); */
+}
+
+/* navbar links */
+.navLink {
+  @apply gap-5 items-center hidden md:flex;
+}
+
+/* logo container */
+.logo {
+  @apply text-6xl text-amber-500 ;
+}
+
+/* subscribe and twitter icon conatiner */
+.subscribe {
+  @apply flex gap-5 items-center;
+}
+
+/* twitter icon styles */
+.subscribe a {
+  @apply text-2xl px-2 py-2 outline-zinc-200 hover:bg-zinc-800 ease-in-out duration-200;
+  border: 1px solid;
+  border-radius: .5rem;
+}
+
+/* Subscribe button styles */
+.subscribe button {
+  @apply px-4 py-2 outline-zinc-200 hover:bg-zinc-800 ease-in-out duration-200;
+  border: 1px solid;
+  border-radius: .5rem;
+}
+
+/* Mobile view navlinks */
+.mobileNav {
+  @apply fixed top-0 w-full h-[100dvh] ease-in-out duration-200 md:hidden;
+  backdrop-filter: blur(20px) brightness(1.2) saturate(1.5);
+  background-color: rgba(24, 24, 27, 0.3);
+  z-index: 1;
+}
+
+.mobileNav ul {
+  @apply w-1/2 h-full flex flex-col gap-6 px-[5vw] py-5 z-30;
+}
+
+/* .mobileNavClose {
+  @apply w-1/2 h-full z-30;
+} */
+
+.mobileNav ul li:last-child {
+  @apply mt-auto mb-24;
+}
+
+.mobileNav ul li a {
+  @apply text-xl;
+}
+
+/* Mobile nav open button */
+.toggleBtn {
+  @apply text-2xl px-2 py-2 outline-zinc-200 md:hidden;
+  border: 1px solid;
+  border-radius: .5rem;
+}
+
+
