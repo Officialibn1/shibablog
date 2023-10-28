@@ -1,0 +1,67 @@
+.blogsWrapper {
+    @apply w-full flex flex-wrap gap-14 justify-center;
+}
+
+.blogsWrapper .blogCard {
+    @apply w-full max-w-[382px];
+}
+
+.blogsWrapper .blogCard > a {
+    @apply w-full flex flex-col gap-5;
+}
+
+.blogsWrapper .blogCard > a .blogImg {
+    @apply w-full overflow-hidden;
+    border-radius: 1.5rem;
+}
+
+.blogsWrapper .blogCard > a .blogImg img {
+    @apply w-full;
+}
+
+.blogText {
+    @apply w-full flex flex-col gap-3;
+}
+
+.blogText h1 {
+    @apply text-2xl;
+}
+
+.blogText p {
+    @apply text-sm font-light;
+}
+
+.authorCard {
+    @apply w-full flex gap-3 items-center mt-5;
+}
+
+.authorCard .authorImg {
+    @apply w-14 h-14 overflow-hidden;
+    border-radius: 50%;
+}
+
+.authorCard .authorImg img {
+    @apply w-full h-full;
+}
+
+.authorCard .authorText h1 {
+    @apply text-sm font-semibold;
+}
+
+.authorCard .authorText p {
+    @apply text-[10px] font-thin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

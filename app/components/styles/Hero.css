@@ -3,7 +3,7 @@ header {
 }
 
 header h1 {
-    @apply text-3xl text-center;
+    @apply text-5xl text-center;
 }
 
 header p {

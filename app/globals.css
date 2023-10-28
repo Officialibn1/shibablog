@@ -12,7 +12,7 @@ main {
 
 /* Navbar styles */
 nav {
-  @apply flex justify-between items-center py-5 fixed top-0 left-0 w-full px-[5vw];
+  @apply flex justify-between items-center py-5 fixed top-0 left-0 w-full px-[5vw] bg-zinc-900;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -78,7 +78,7 @@ nav {
 
 /* Footer styles */
 footer {
-  @apply bg-zinc-950 w-full flex flex-col gap-5 py-10 max-w-screen-2xl mx-auto px-[5vw] items-center;
+  @apply bg-zinc-950 w-full flex flex-col gap-5 py-10 mt-20 px-[5vw] items-center;
 }
 
 footer p {
