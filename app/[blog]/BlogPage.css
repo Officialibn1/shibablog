@@ -1,0 +1,56 @@
+.blogPage {
+    @apply w-full flex flex-col md:max-w-[691px] mx-auto;
+}
+
+
+.blogPage .authorCard {
+    @apply w-full flex gap-3 items-center my-5 px-3 pb-3;
+}
+
+.blogPage .authorCard .authorImg {
+    @apply w-14 h-14 overflow-hidden;
+    border-radius: 50%;
+}
+
+.blogPage .authorCard .authorImg img {
+    @apply w-full h-full;
+}
+
+.blogPage .authorCard .authorText h1 {
+    @apply text-base font-semibold;
+}
+
+.blogPage .authorCard .authorText p {
+    @apply text-sm font-thin;
+}
+
+.blogPageImg {
+    @apply w-full max-h-[691px];
+}
+
+.blogPageImg img {
+    @apply w-full h-full;
+}
+
+.blogPageText {
+    @apply py-10;
+}
+
+.blogPageText h1 {
+    @apply text-4xl font-semibold mb-5;
+}
+
+.blogPageText p {
+    @apply text-lg font-extralight;
+}
+
+.homeBtn {
+    @apply p-5 flex justify-center items-center;
+}
+
+.homeBtn a {
+    @apply text-zinc-200 p-3 md:hover:bg-zinc-950 ease-in-out duration-300;
+    border: 1px solid rgb(228 228 231);
+    border-radius: .5rem;
+}
+

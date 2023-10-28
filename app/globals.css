@@ -12,7 +12,7 @@ main {
 
 /* Navbar styles */
 nav {
-  @apply flex justify-between items-center py-5 fixed top-0 left-0 w-full px-[5vw] bg-zinc-900;
+  @apply flex justify-between items-center py-5 fixed top-0 left-0 w-full px-[5vw] bg-zinc-900 shadow-2xl;
   /* backdrop-filter: blur(10px); */
 }
 
@@ -33,14 +33,14 @@ nav {
 
 /* twitter icon styles */
 .subscribe a {
-  @apply text-2xl px-2 py-2 outline-zinc-200 hover:bg-zinc-800 ease-in-out duration-200;
+  @apply text-2xl px-2 py-2 outline-zinc-200 hover:bg-zinc-950 ease-in-out duration-200;
   border: 1px solid;
   border-radius: .5rem;
 }
 
 /* Subscribe button styles */
 .subscribe button {
-  @apply px-4 py-2 outline-zinc-200 hover:bg-zinc-800 ease-in-out duration-200;
+  @apply px-4 py-2 outline-zinc-200 hover:bg-zinc-950 ease-in-out duration-200;
   border: 1px solid;
   border-radius: .5rem;
 }

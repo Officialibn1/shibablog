@@ -3,7 +3,9 @@
 }
 
 .blogsWrapper .blogCard {
-    @apply w-full max-w-[382px];
+    @apply w-full max-w-[382px] md:hover:bg-zinc-950 duration-300 ease-in-out shadow-2xl;
+    border-radius: 1.5rem;
+
 }
 
 .blogsWrapper .blogCard > a {
@@ -20,7 +22,7 @@
 }
 
 .blogText {
-    @apply w-full flex flex-col gap-3;
+    @apply w-full flex flex-col gap-3 px-3;
 }
 
 .blogText h1 {
@@ -32,7 +34,7 @@
 }
 
 .authorCard {
-    @apply w-full flex gap-3 items-center mt-5;
+    @apply w-full flex gap-3 items-center mt-5 px-3 pb-3;
 }
 
 .authorCard .authorImg {
